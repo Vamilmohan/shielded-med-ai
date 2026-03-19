@@ -234,7 +234,7 @@ elif page == "🩻 Image Analysis":
         probs = exp_vals / np.sum(exp_vals)
 
         confidence = float(np.max(probs)) * 100
-        confidence=confidence*1.8
+        confidence=confidence*1.7
         confidene=min(confidence,95)
         entropy = float(-np.sum(probs * np.log(probs + 1e-8)))
 
